@@ -27,9 +27,14 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      cursor: pointer;
     }
     section {
+      display: none;
       padding: 20px;
+    }
+    section.active {
+      display: block;
     }
     .images {
       display: flex;
@@ -67,13 +72,13 @@
   </header>
 
   <nav>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#registro">Registro</a>
-    <a href="#imagenes">Galería</a>
-    <a href="#faq">Preguntas Frecuentes</a>
+    <a onclick="showSection('beneficios')">Beneficios</a>
+    <a onclick="showSection('registro')">Registro</a>
+    <a onclick="showSection('imagenes')">Galería</a>
+    <a onclick="showSection('faq')">Preguntas Frecuentes</a>
   </nav>
 
-  <section id="beneficios">
+  <section id="beneficios" class="active">
     <h2>¿Cómo funciona?</h2>
     <p>Lleva tus residuos reciclables a nuestros centros de acopio. Según el peso, acumulas puntos para canjear por alimentos o medicinas.</p>
   </section>
@@ -121,5 +126,13 @@
   <footer>
     <p>© 2025 Recicla y Gana — Un proyecto con impacto social y ambiental</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
