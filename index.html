@@ -84,6 +84,13 @@
     details {
       margin-bottom: 10px;
     }
+    .full-width-img {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -99,7 +106,7 @@
     <a onclick="showSection('faq')">Preguntas Frecuentes</a>
     <a onclick="showSection('objetivo')">Objetivo</a>
     <a onclick="showSection('donaciones')">Donaciones</a>
-    <a onclick="showSection('agenda')">Agenda tu Recolección</a>
+    <a onclick="showSection('agenda')">Envíos a Domicilio</a>
   </nav>
 
   <section id="beneficios" class="active">
@@ -149,7 +156,7 @@
 
   <section id="objetivo">
     <h2>Objetivo del Proyecto</h2>
-    <p>Contribuir al bienestar de comunidades vulnerables a través del reciclaje, generando conciencia ambiental y acceso a productos esenciales mediante un sistema de puntos solidario.</p>
+    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/objetivo_page-0001.jpg?raw=true" alt="Objetivo del Proyecto">
   </section>
 
   <section id="donaciones">
@@ -159,14 +166,17 @@
   </section>
 
   <section id="agenda">
-    <h2>Agenda tu Recolección y Tienda en Línea</h2>
-    <p>Si no puedes llevar tu reciclaje, nosotros vamos por él. Se pesa en el momento y se agregan los puntos a tu cuenta. También puedes acceder a nuestra tienda en línea para canjear tus puntos por productos básicos.</p>
-    <iframe 
-      src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/Agenda%20tu%20recoleccion%20(1).pdf?raw=true" 
-      width="100%" 
-      height="600px" 
-      style="border: none;">
-    </iframe>
+    <h2>Envíos a Domicilio</h2>
+    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/Agenda%20tu%20recoleccion%20(1)%20(1)_page-0001.jpg?raw=true" alt="Agenda tu Recolección">
+    <h3>Agendar tu Recolección</h3>
+    <form>
+      <label>Nombre:<br><input type="text" required></label><br><br>
+      <label>Dirección completa:<br><input type="text" required></label><br><br>
+      <label>Teléfono de contacto:<br><input type="tel" required></label><br><br>
+      <label>Fecha deseada:<br><input type="date" required></label><br><br>
+      <label>Comentarios adicionales:<br><textarea rows="4"></textarea></label><br><br>
+      <button type="submit">Agendar Recolección</button>
+    </form>
   </section>
 
   <footer>
