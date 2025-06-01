@@ -129,27 +129,95 @@
     <a onclick="showSection('canjes')">Tienda de Canjes</a>
   </nav>
 
-  <!-- secciones anteriores omitidas por brevedad -->
+  <section id="beneficios" class="active">
+    <h2>¿Cómo funciona?</h2>
+    <p>Lleva tus residuos reciclables a nuestros centros de acopio. Según el peso, acumulas puntos para canjear por alimentos o medicinas.</p>
+  </section>
+
+  <section id="registro">
+    <h2>Registro de Participantes</h2>
+    <form>
+      <label>Nombre completo:<br><input type="text" name="nombre" required></label><br><br>
+      <label>Correo electrónico:<br><input type="email" name="correo" required></label><br><br>
+      <label>Teléfono de contacto:<br><input type="tel" name="telefono" required></label><br><br>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <section id="imagenes">
+    <h2>Galería</h2>
+    <div class="images">
+      <img src="https://cdn.pixabay.com/photo/2017/03/29/12/00/recycling-2184490_1280.jpg" alt="Centro de reciclaje">
+      <img src="https://cdn.pixabay.com/photo/2017/06/01/22/28/recycle-2369832_1280.jpg" alt="Personas reciclando">
+      <img src="https://cdn.pixabay.com/photo/2021/05/27/12/27/recycling-6288789_1280.jpg" alt="Recolección de PET">
+      <img src="https://cdn.pixabay.com/photo/2017/01/17/15/19/recycle-1987980_1280.png" alt="Canjeo de productos">
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Qué tipo de materiales puedo llevar?</summary>
+      <p>PET, latas, cartón, papel, chatarra, entre otros materiales reciclables.</p>
+    </details>
+    <details>
+      <summary>¿Dónde se encuentran los centros de acopio?</summary>
+      <p>Próximamente publicaremos un mapa con los centros disponibles. Por ahora puedes registrarte para recibir notificaciones.</p>
+    </details>
+    <details>
+      <summary>¿Cómo se calculan los puntos?</summary>
+      <p>Se calcula con base en el peso y tipo de material. Algunos materiales valen más puntos.</p>
+    </details>
+    <details>
+      <summary>¿Puedo participar si no tengo empleo?</summary>
+      <p>Sí, este programa está especialmente dirigido a personas sin empleo fijo.</p>
+    </details>
+  </section>
+
+  <section id="objetivo">
+    <h2>Objetivo del Proyecto</h2>
+    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/objetivo_page-0001.jpg?raw=true" alt="Objetivo del Proyecto">
+  </section>
+
+  <section id="donaciones">
+    <h2>Donaciones</h2>
+    <p>Apóyanos con donativos para mantener operativos los centros de acopio, adquirir productos básicos y cubrir la logística de distribución. Aceptamos donaciones monetarias y en especie.</p>
+    <p>Escríbenos a <strong>donaciones@reciclaygana.org</strong> para más información.</p>
+  </section>
+
+  <section id="agenda">
+    <h2>Envíos a Domicilio</h2>
+    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/Agenda%20tu%20recoleccion%20(1)%20(1)_page-0001.jpg?raw=true" alt="Agenda tu Recolección">
+    <h3>Agendar tu Recolección</h3>
+    <form>
+      <label>Nombre:<br><input type="text" required></label><br><br>
+      <label>Dirección completa:<br><input type="text" required></label><br><br>
+      <label>Teléfono de contacto:<br><input type="tel" required></label><br><br>
+      <label>Fecha deseada:<br><input type="date" required></label><br><br>
+      <label>Comentarios adicionales:<br><textarea rows="4"></textarea></label><br><br>
+      <button type="submit">Agendar Recolección</button>
+    </form>
+  </section>
 
   <section id="canjes">
     <h2>Tienda de Canjes</h2>
     <p>Estos son los productos que puedes obtener con tus puntos. Haz tu pedido y recíbelo en la puerta de tu casa.</p>
-    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/Agenda%20tu%20recoleccion%20(1)%20(1)_page-0002.jpg?raw=true" alt="Tienda en línea">
+    <img class="full-width-img" src="https://github.com/EncinosAb/Recicla-y-gana/blob/main/Agenda%20tu%20recoleccion%20(1)%20(1)_page-0002.jpg?raw=true" alt="Tienda de Canjes">
     <h3>Selecciona el producto que deseas canjear:</h3>
     <div class="menu-canje">
-      <button onclick="alert('Has solicitado Aceite por 30 puntos')">Aceite - 30 pts</button>
-      <button onclick="alert('Has solicitado Frijoles por 22 puntos')">Frijoles - 22 pts</button>
-      <button onclick="alert('Has solicitado Azúcar por 30 puntos')">Azúcar - 30 pts</button>
-      <button onclick="alert('Has solicitado Papel Higiénico por 20 puntos')">Papel Higiénico - 20 pts</button>
-      <button onclick="alert('Has solicitado Pasta por 45 puntos')">Pasta - 45 pts</button>
-      <button onclick="alert('Has solicitado Arroz por 23 puntos')">Arroz - 23 pts</button>
-      <button onclick="alert('Has solicitado Leche por 28 puntos')">Leche - 28 pts</button>
-      <button onclick="alert('Has solicitado Huevos por 30 puntos')">Huevos - 30 pts</button>
-      <button onclick="alert('Has solicitado Paracetamol por 10 puntos')">Paracetamol - 10 pts</button>
-      <button onclick="alert('Has solicitado Toalla femenina por 18 puntos')">Toalla femenina - 18 pts</button>
-      <button onclick="alert('Has solicitado Pan por 30 puntos')">Pan - 30 pts</button>
-      <button onclick="alert('Has solicitado Antidiarreico por 20 puntos')">Antidiarreico - 20 pts</button>
-      <button onclick="alert('Has solicitado Pasta seca por 15 puntos')">Pasta seca - 15 pts</button>
+      <button onclick="alert('Has solicitado Aceite - 30 puntos')">Aceite - 30 pts</button>
+      <button onclick="alert('Has solicitado Frijoles - 22 puntos')">Frijoles - 22 pts</button>
+      <button onclick="alert('Has solicitado Azúcar - 30 puntos')">Azúcar - 30 pts</button>
+      <button onclick="alert('Has solicitado Papel Higiénico - 20 puntos')">Papel Higiénico - 20 pts</button>
+      <button onclick="alert('Has solicitado Pasta - 45 puntos')">Pasta - 45 pts</button>
+      <button onclick="alert('Has solicitado Arroz - 23 puntos')">Arroz - 23 pts</button>
+      <button onclick="alert('Has solicitado Leche - 28 puntos')">Leche - 28 pts</button>
+      <button onclick="alert('Has solicitado Huevos - 30 puntos')">Huevos - 30 pts</button>
+      <button onclick="alert('Has solicitado Paracetamol - 10 puntos')">Paracetamol - 10 pts</button>
+      <button onclick="alert('Has solicitado Toalla Femenina - 18 puntos')">Toalla Femenina - 18 pts</button>
+      <button onclick="alert('Has solicitado Pan - 30 puntos')">Pan - 30 pts</button>
+      <button onclick="alert('Has solicitado Antidiarreico - 20 puntos')">Antidiarreico - 20 pts</button>
+      <button onclick="alert('Has solicitado Pasta Seca - 15 puntos')">Pasta Seca - 15 pts</button>
     </div>
   </section>
 
